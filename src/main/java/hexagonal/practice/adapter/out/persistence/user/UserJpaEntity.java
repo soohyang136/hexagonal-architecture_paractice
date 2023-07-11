@@ -12,12 +12,12 @@ public class UserJpaEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
     @Column(unique = true)
-    String userId;
+    private String userId;
 
-    String password;
+    private String password;
 
-    String name;
+    private String name;
 }
